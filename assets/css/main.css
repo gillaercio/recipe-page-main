@@ -1,13 +1,73 @@
 @charset "UTF-8";
 
-main header img {
+header img {
   height: auto;
   width: 100%;
   object-fit: fill;
 }
 
+main {
+  margin: 30px;
+}
+
+main h1 {
+  font-size: 3em;
+}
+
+main h2 {
+  font-size: 2.5em;
+  color: var(--brown-800);
+  margin-block: 20px;
+}
+
+main h3 {
+  color: var(--rose-800);
+  font-size: 2em;
+}
+
+main h1, main h2 {
+  font-family: "YoungSerif";
+  font-weight: 400;
+}
+
+main section {
+  background-color: var(--rose-50);
+  border-radius: 5px;
+  padding: 20px;
+  margin-block: 20px;
+}
+
+main p {
+  margin-block: 20px;
+}
+
+main p, main ul, main ol, table {
+  font-size: 1.4em;
+}
+
+main ul, main ol {
+  margin: 10px 0 0 25px;
+}
+
+main ul li, main ol li {
+  padding-block: 5px;
+  padding-left: 10px;
+}
+
+main table tr {
+  border: 1px solid;
+}
+
+main table tr td {
+  padding: 10px 40px;
+  border: 1px solid;
+}
+
+hr {
+  margin-top: 30px;
+}
+
 footer.attribution {
-  font-size: 1.5em;
   text-align: center;
 }
 
