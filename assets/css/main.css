@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+main header img {
+  height: auto;
+  width: 100%;
+  object-fit: fill;
+}
+
+footer.attribution {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+footer.attribution a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;  
+}
+
+footer.attribution a:hover {
+  color: var(--blue);
+  text-decoration: underline;
+}
