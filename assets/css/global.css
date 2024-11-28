@@ -9,6 +9,7 @@
 html {
   font-size: 62.5%;
   font-family: "Outfit";
+  color: var(--stone-600);
 }
 
 @font-face {

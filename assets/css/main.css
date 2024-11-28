@@ -12,12 +12,18 @@ main {
 
 main h1 {
   font-size: 3em;
+  color: var(--stone-900);
 }
 
 main h2 {
   font-size: 2.5em;
-  color: var(--brown-800);
   margin-block: 20px;
+}
+
+main h2.delimitation {
+  border-top: 1px solid;
+  border-color: var(--stone-150);
+  padding-top: 20px;
 }
 
 main h3 {
@@ -28,6 +34,10 @@ main h3 {
 main h1, main h2 {
   font-family: "YoungSerif";
   font-weight: 400;
+}
+
+main h2, main table tr td.right {
+  color: var(--brown-800);
 }
 
 main section {
@@ -54,17 +64,27 @@ main ul li, main ol li {
   padding-left: 10px;
 }
 
-main table tr {
-  border: 1px solid;
+main table {
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+main table tr.border {
+  border-bottom: 1px solid;
+  border-color: var(--stone-150);
 }
 
 main table tr td {
-  padding: 10px 40px;
-  border: 1px solid;
+  padding-block: 10px;
+  padding-left: 30px;
+  padding-right: 40px;
 }
 
-hr {
-  margin-top: 30px;
+main table tr td.right {
+  font-weight: bold;
+  padding-left: 30px;
+  padding-right: 60px;
 }
 
 footer.attribution {
