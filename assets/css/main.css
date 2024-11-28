@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body {
+  background-color: var(--white);
+}
+
 header img {
   height: auto;
   width: 100%;
@@ -10,25 +14,34 @@ main {
   margin: 30px;
 }
 
+main article {
+  border-radius: 5px;
+  padding: 20px;
+  margin-block: 20px;
+  background-color: var(--rose-50);
+}
+
 main h1 {
   font-size: 3em;
+  font-weight: 700;
+  line-height: 1em;
   color: var(--stone-900);
 }
 
 main h2 {
   font-size: 2.5em;
+  font-weight: 600;
   margin-block: 20px;
 }
 
 main h2.delimitation {
+  padding-top: 20px;
   border-top: 1px solid;
   border-color: var(--stone-150);
-  padding-top: 20px;
 }
 
-main h3 {
-  color: var(--rose-800);
-  font-size: 2em;
+main h2, main li::marker, main table tr td.right {
+  color: var(--brown-800);
 }
 
 main h1, main h2 {
@@ -36,32 +49,30 @@ main h1, main h2 {
   font-weight: 400;
 }
 
-main h2, main table tr td.right {
-  color: var(--brown-800);
-}
-
-main section {
-  background-color: var(--rose-50);
-  border-radius: 5px;
-  padding: 20px;
-  margin-block: 20px;
+main h3 {
+  font-size: 2em;
+  color: var(--rose-800);
 }
 
 main p {
+  font-size: 1.6em;
+  line-height: 1.6em;
   margin-block: 20px;
 }
 
-main p, main ul, main ol, table {
+main p, main table {
   font-size: 1.4em;
 }
 
 main ul, main ol {
-  margin: 10px 0 0 25px;
+  font-size: 1.3em;
+  margin-top: 10px;
+  margin-left: 25px;
 }
 
 main ul li, main ol li {
   padding-block: 5px;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 main table {
@@ -92,12 +103,12 @@ footer.attribution {
 }
 
 footer.attribution a {
-  color: black;
   font-weight: bold;
   text-decoration: none;  
+  color: black;
 }
 
 footer.attribution a:hover {
-  color: var(--blue);
   text-decoration: underline;
+  color: var(--blue);
 }
