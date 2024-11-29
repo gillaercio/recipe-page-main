@@ -1,111 +1,120 @@
 @charset "UTF-8";
 
 body {
-  background-color: var(--white);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-around;
 }
 
 header img {
-  height: auto;
-  width: 100%;
-  object-fit: fill;
+  height: 100%;
+  width: 95vw;
+  object-fit: contain;
 }
 
-main {
-  margin: 30px;
+main#content {
+  padding: 30px;
+  margin-top: -3px;
+  background-color: var(--white);
 }
 
-main article {
-  border-radius: 5px;
+main#content article {
+  border-radius: 8px;
   padding: 20px;
-  margin-block: 20px;
+  margin-top: 20px;
   background-color: var(--rose-50);
 }
 
-main h1 {
+main#content h1 {
   font-size: 3em;
   font-weight: 700;
   line-height: 1em;
   color: var(--stone-900);
 }
 
-main h2 {
+main#content h2 {
   font-size: 2.5em;
   font-weight: 600;
   margin-block: 20px;
 }
 
-main h2.delimitation {
+main#content h2.delimitation {
   padding-top: 20px;
   border-top: 1px solid;
   border-color: var(--stone-150);
 }
 
-main h2, main li::marker, main table tr td.right {
+main#content h2, main#content li::marker, main#content table tr td.right {
   color: var(--brown-800);
 }
 
-main h1, main h2 {
+main#content h1, main h2 {
   font-family: "YoungSerif";
   font-weight: 400;
 }
 
-main h3 {
+main#content h3 {
   font-size: 2em;
   color: var(--rose-800);
 }
 
-main p {
+main#content p {
   font-size: 1.6em;
   line-height: 1.6em;
   margin-block: 20px;
 }
 
-main p, main table {
+main#content p, main#content ul, main#content ol, main#content table, footer.attribution {
   font-size: 1.4em;
 }
 
-main ul, main ol {
-  font-size: 1.3em;
+main#content ul, main#content ol {
   margin-top: 10px;
   margin-left: 25px;
 }
 
-main ul li, main ol li {
+main#content ul li, main#content ol li {
   padding-block: 5px;
   padding-left: 15px;
 }
 
-main table {
+main#content table {
   border: 0;
   border-collapse: collapse;
   border-spacing: 0;
+  margin: auto;
 }
 
-main table tr.border {
+main#content table tr.border {
   border-bottom: 1px solid;
   border-color: var(--stone-150);
 }
 
-main table tr td {
+main#content table tr td {
   padding-block: 10px;
-  padding-left: 30px;
-  padding-right: 40px;
+  width: 300px;
 }
 
-main table tr td.right {
-  font-weight: bold;
+main#content table tr td.left {
   padding-left: 30px;
-  padding-right: 60px;
+}
+
+main#content table tr td.right {
+  font-weight: bold;
 }
 
 footer.attribution {
   text-align: center;
+  margin-top: 20px;
 }
 
 footer.attribution a {
   font-weight: bold;
   text-decoration: none;  
-  color: black;
+  color: var(--black);
 }
 
 footer.attribution a:hover {

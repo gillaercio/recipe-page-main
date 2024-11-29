@@ -28,6 +28,7 @@ html {
 
 :root {
   --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
 
   --stone-100: hsl(30, 54%, 90%);
   --stone-150: hsl(30, 18%, 87%);
